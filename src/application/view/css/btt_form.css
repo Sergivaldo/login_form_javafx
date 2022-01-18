@@ -1,0 +1,4 @@
+.button:hover{
+	-fx-font-size:11;
+	-fx-font-weight:bold;
+}

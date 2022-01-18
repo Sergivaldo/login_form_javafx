@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="480.0" prefWidth="640.0" style="-fx-background-insets: 0 4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <VBox fx:id="login_with_box" alignment="CENTER" prefHeight="480.0" prefWidth="286.0" style="-fx-background-color: #3b51ab; -fx-background-radius: 15 0 0 15;">
+         <children>
+            <VBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Label fx:id="lbl_optional_text" alignment="CENTER" contentDisplay="CENTER" text="Login With" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.104347825050354" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="212.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="google_btt" contentDisplay="TOP" graphicTextGap="15.0" mnemonicParsing="false" stylesheets="@../css/login_with_btt.css" text="Google" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="git_hub_btt" contentDisplay="TOP" graphicTextGap="15.0" mnemonicParsing="false" stylesheets="@../css/login_with_btt.css" text="GitHub" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="480.0" prefWidth="354.0" spacing="15.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="67.0" prefWidth="314.0" spacing="15.0">
+               <children>
+                  <Button fx:id="minimize_btt" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#minimize" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: transparent; " stylesheets="@../css/window_btt.css">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="close_btt" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: transparent;" stylesheets="@../css/window_btt.css">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox fx:id="form_box" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="443.0" prefWidth="280.0" spacing="25.0" style="-fx-background-color: transparent;" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+         </padding>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-3.0" radius="7.0" width="20.0">
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </DropShadow>
+         </effect>
+      </VBox>
+   </children>
+</HBox>

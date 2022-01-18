@@ -1,0 +1,7 @@
+.text-field{
+	-fx-background-color: transparent;
+	-fx-border-color:  rgba(59,81,171,0.6);
+	-fx-border-width: 0 0 1 0;
+	-fx-focus-color: rgba(59,81,171,0.6);
+	-fx-text-fill: rgba(59,81,171,0.9);
+} 
