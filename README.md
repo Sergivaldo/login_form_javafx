@@ -20,7 +20,7 @@
   - Formulário de login
     - [x] Verificar se todos os campos foram preenchidos.
   
-- Screenshots<br>
+### Screenshots<br>
   <div align="left">
     <img alt=" gerador de senhas" width="190px" name="gerador de senhas" src="./readme/gifs/password_screen.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </div>
